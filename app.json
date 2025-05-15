@@ -1,20 +1,29 @@
 {
   "expo": {
-    "name": "rn-myProperty",
+    "name": "Global Zamindar",
     "slug": "rn-myProperty",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/play_store_512.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
+      "bundleIdentifier": "com.render.rnmyproperty",
+      "buildNumber": "1.0.1",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.render.rnmyproperty",
+      "versionCode": 3,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/images/play_store_512.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR GOOGLE MAP API KEY HERE"
+        }
       }
     },
     "web": {
@@ -27,7 +36,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/play_store_512.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
@@ -36,6 +45,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "016b9dac-d8b0-4103-8f39-64bec8cdd40a"
+      }
     }
   }
 }
