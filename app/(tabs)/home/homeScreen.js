@@ -14,6 +14,9 @@ import { Snackbar } from "react-native-paper";
 import { useNavigation } from "@react-navigation/native"; // ✅ drawer compatible
 import { router } from "expo-router";
 import CitiesGrid from "../../../component/CitiesGrid";
+// import Hamburger from "../../../component/Hamburger";
+import CustomDrawer from "../../../component/CustomDrawer";
+// import DrawerScreen from "../../../component/DrawerScreen";
 
 const nearByPropertyList = [
   {
@@ -176,6 +179,10 @@ const HomeScreen = () => {
 
   return (
     <View style={{ flex: 1, backgroundColor: Colors.whiteColor }}>
+      {/* <Hamburger /> */}
+      <CustomDrawer />
+      {/* <DrawerScreen /> */}
+
       {header()}
       <FlatList
         ListHeaderComponent={
